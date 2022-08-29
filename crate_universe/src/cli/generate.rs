@@ -128,8 +128,8 @@ pub fn generate(opt: GenerateOptions) -> Result<()> {
     }
 
     // Write the updated Cargo.lock file
-    fs::write(&opt.cargo_lockfile, cargo_lockfile.to_string())
-        .context("Failed to write Cargo.lock file back to the workspace.")?;
+    // fs::write(&opt.cargo_lockfile, cargo_lockfile.to_string())
+    //     .context("Failed to write Cargo.lock file back to the workspace.")?;
 
     Ok(())
 }
